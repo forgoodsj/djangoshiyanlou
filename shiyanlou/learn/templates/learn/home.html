@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>hello</h1>
+    <h3>{{string}}</h3>
+    <h3>{{string}}</h3>
+    {% for i in list1 %}
+        {{i}}
+        {% if not forloop.last %}
+            ,
+        {% endif %}
+    {% endfor %}
+    <table>
+        <thead>
+            <tr>
+                <th>变量</th>
+                <th>描述</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>forloop.counter</td>
+                <td>索引从 1 开始算</td>
+            </tr>
+            <tr>
+                <td>forloop.counter0</td>
+                <td>索引从 0 开始算</td>
+            </tr>
+            <tr>
+                <td>forloop.revcounter</td>
+                <td>索引从最大长度到 1</td>
+            </tr>
+            <tr>
+                <td>forloop.revcounter0</td>
+                <td>索引从最大长度到 0</td>
+            </tr>
+            <tr>
+                <td>forloop.first</td>
+                <td>当遍历的元素为第一项时为真</td>
+            </tr>
+            <tr>
+                <td>forloop.last</td>
+                <td>当遍历的元素为最后一项时为真</td>
+            </tr>
+            <tr>
+                <td>forloop.parentloop</td>
+                <td>用在嵌套的 for 循环中，获取上一层 for 循环的 forloop</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
