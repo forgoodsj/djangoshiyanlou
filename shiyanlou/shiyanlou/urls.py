@@ -27,5 +27,6 @@ urlpatterns = [
     url(r'^add2/(\d+)/(\d+)/$',calc_views.add2,name='add2'),
     url(r'^learn/index/$', learn_views.index, name='index'),
     url(r'^learn/home/', learn_views.home,name='home'),
+    url(r'^learn/email/', learn_views.email,name='email'),
 
 ]
